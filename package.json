@@ -1,0 +1,33 @@
+{
+  "name": "flow-example",
+  "version": "1.0.0",
+  "description": "A simple example of using Flow",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register",
+    "pretest": "npm run lint && npm run flow",
+    "build": "babel src/ -d lib/",
+    "lint": "eslint .",
+    "flow": "flow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinjmurphy/flow-example.git"
+  },
+  "keywords": ["flow", "js", "example"],
+  "author": "robin@robinmurphy.co.uk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robinjmurphy/flow-example/issues"
+  },
+  "homepage": "https://github.com/robinjmurphy/flow-example#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.3.0",
+    "flow-bin": "^0.51.1",
+    "mocha": "^3.4.2"
+  }
+}
